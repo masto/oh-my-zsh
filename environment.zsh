@@ -115,17 +115,3 @@ if zstyle -t ':omz:environment:termcap' color; then
   export LESS_TERMCAP_ue=$'\E[0m'          # end underline
   export LESS_TERMCAP_us=$'\E[01;32m'      # begin underline
 fi
-
-# This is my personal stuff, for now I'm putting it in here
-export BLOCKSIZE=K
-export PAGER=less
-export CVS_RSH=ssh
-export RSYNC_RSH=ssh
-export CLICOLOR=YES
-export PERL_AUTOINSTALL=--defaultdeps
-export ANT_OPTS="-Xms256m -Xmx256m"
-#export PERL5LIB="./extlib/lib/perl5/darwin-2level:./extlib/lib/perl5"
-export ADAMA_NO_BACKUPS_RISK_LOSING_EVERYTHING=1
-
-# Work around unintentional linking with Lion's libpq
-export PGHOST=/tmp
