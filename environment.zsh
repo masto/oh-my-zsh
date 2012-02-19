@@ -73,8 +73,8 @@ export LC_NUMERIC="$LANG"
 export LC_TIME="$LANG"
 
 # Editors
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="emacs"
+export VISUAL="emacs"
 export PAGER='less'
 
 # Grep
@@ -95,7 +95,7 @@ fi
 # Less
 export LESSCHARSET="UTF-8"
 export LESSHISTFILE='-'
-export LESSEDIT='vim ?lm+%lm. %f'
+export LESSEDIT='emacs ?lm+%lm. %f'
 export LESS='-F -g -i -M -R -S -w -X -z-4'
 
 if (( $+commands[lesspipe.sh] )); then
