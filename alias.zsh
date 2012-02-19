@@ -15,7 +15,7 @@ if zstyle -t ':omz:alias:ls' color; then
   else
     export CLICOLOR=1
     export LSCOLORS="exfxcxdxbxegedabagacad"
-    alias ls='ls -G -F'
+    alias ls='ls -G -F -v'
   fi
 fi
 
@@ -52,9 +52,10 @@ alias p="$PAGER"
 alias po='popd'
 alias pu='pushd'
 alias rake='noglob rake'
-alias rm='nocorrect rm -i'
+alias rm='nocorrect rm'
 alias scp='nocorrect scp'
 alias type='type -a'
+alias jd='jobs; dirs'
 
 # Mac OS X
 if [[ "$OSTYPE" != darwin* ]]; then
