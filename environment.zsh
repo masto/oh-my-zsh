@@ -99,7 +99,7 @@ fi
 export LESSCHARSET="UTF-8"
 export LESSHISTFILE='-'
 export LESSEDIT='emacs ?lm+%lm. %f'
-export LESS='-i -M -R -X'
+export LESS='-i -M -R -X -S'
 
 if (( $+commands[lesspipe.sh] )); then
   export LESSOPEN='| /usr/bin/env lesspipe.sh %s 2>&-'
