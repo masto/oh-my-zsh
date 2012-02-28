@@ -55,7 +55,8 @@ alias rake='noglob rake'
 alias rm='nocorrect rm'
 alias scp='nocorrect scp'
 alias type='type -a'
-alias jd='jobs; dirs'
+alias jd='dirs -v; jobs'
+alias pgw="psql -c 'select * from pg_stat_activity' postgres postgres"
 
 # Mac OS X
 if [[ "$OSTYPE" != darwin* ]]; then
