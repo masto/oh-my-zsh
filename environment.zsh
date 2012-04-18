@@ -57,6 +57,10 @@ path=(
   /{bin,sbin}
 )
 
+for opt_path in ~/.gem/ruby/*/bin(/N); do
+  path+=($opt_path)
+done
+
 for path_file in /etc/paths.d/*(.N); do
   path+=($(<$path_file))
 done
